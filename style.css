@@ -1,0 +1,42 @@
+@font-face {
+    font-family: pixelFont;
+    src: url(19363.ttf);
+  }
+
+
+body {
+    background: rgb(33, 34, 32);
+
+    font-family: pixelFont;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    margin: 0;
+}
+
+.play-button {
+    position: relative;
+    margin-top: 15px;
+    padding: 10px 40px;
+    font-size: 28px;
+
+    font-family: inherit;
+    background: rgb(172, 44, 44);
+    color: #fff;
+    border: 1px solid white;
+}
+
+.play-button:active {
+    top: 2px;
+}
+
+.score-table {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+}
