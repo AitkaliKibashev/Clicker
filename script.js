@@ -6,7 +6,9 @@ const timer = document.querySelector('#timer')
 const TIMEOUT = 5000
 let clicks = 0
 
-highScore.textContent = 'High score: ' + localStorage.highScore
+if (localStorage.highScore) {
+	highScore.textContent = 'High score: ' + localStorage.highScore
+}
 score.textContent = 'Current score: ' + clicks
 timer.textContent = 'Click to start'
 
@@ -16,6 +18,7 @@ playButton.onclick = startGame
 
 function startGame(event) {
 	playButton.textContent = 'CLICK'
+	highScore.textContent = 'High score: ' + localStorage.highScore
 	
 
 	const startTime = Date.now()
